@@ -1,0 +1,60 @@
+.panel{
+    position: relative;
+    border-bottom: 1px solid #9a9a9a;
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+
+.record-edit-btn {
+    border: none;
+    background: none;
+    padding: 5px 10px;
+}
+.record-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.record-details {
+    background: #f5f7f8;
+    width: 86%;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.record-header {
+    width: 100%;
+}
+.record-header div {
+    width: 100%;
+}
+.record-input-fields {
+    padding: 15px;
+}
+
+.edit-record-buttons {
+    padding: 15px;
+}
+.record-edit-section{
+    position: absolute;
+    top: 15px;
+    right: 0;
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .container{
+        width: 65%;
+        margin: 0 auto;
+    }
+    .record-header div {
+        width: 25%;
+        float: left;
+    }
+    .record-details {
+        width: 92%;
+    }
+}

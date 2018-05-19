@@ -16,10 +16,13 @@
     <body>
 
         <div class="container">
+            <h1>Records</h1>
+            <small class="text-muted">Last updated 10/4/2018 4:53 AM</small>
             <form action="" id="records2">
                 <div class="panel">
                     <div class="record-edit-section">
-                        <button class="record-edit-btn" type="button" data-toggle="collapse" data-parent="#records2" data-target="#recordOne"><i class="fas fa-pencil-alt"></i></button>
+                        <button class="record-btn record-edit-btn" type="button" data-toggle="collapse" data-parent="#records2" data-target="#recordOne"><i class="fas fa-pencil-alt"></i></button>
+                        <button class="record-btn record-remove-btn" type="button"><i class="fas fa-trash-alt"></i></button>
                     </div>
                     <div class="record-container">
                         <div class="record-header">
@@ -49,14 +52,15 @@
                         </div>
                         <div class="edit-record-buttons">
                             <button type="button" class="btn btn-primary">Save</button>
-                            <button type="button" class="btn btn-default">Cancel</button>
+                            <button type="button" class="btn btn-default record-btn-close">Cancel</button>
                         </div>
                     </div>
                 </div>
 
                 <div class="panel">
                     <div class="record-edit-section">
-                        <button class="record-edit-btn" type="button" data-toggle="collapse" data-parent="#records2" data-target="#recordTwo"><i class="fas fa-pencil-alt"></i></button>
+                        <button class="record-btn record-edit-btn" type="button" data-toggle="collapse" data-parent="#records2" data-target="#recordTwo"><i class="fas fa-pencil-alt"></i></button>
+                        <button class="record-btn record-remove-btn" type="button"><i class="fas fa-trash-alt"></i></button>
                     </div>
                     <div class="record-container">
                         <div class="record-header">
@@ -87,21 +91,23 @@
                         </div>
                         <div class="edit-record-buttons">
                             <button type="button" class="btn btn-primary">Save</button>
-                            <button type="button" class="btn btn-default">Cancel</button>
+                            <button type="button" class="btn btn-default record-btn-close">Cancel</button>
                         </div>
                     </div>
                 </div>
 
                 <div class="panel">
+                    <div class="record-edit-section">
+                        <button class="record-btn record-edit-btn" type="button" data-toggle="collapse" data-parent="#records2" data-target="#recordThree"><i class="fas fa-pencil-alt"></i></button>
+                        <button class="record-btn record-remove-btn" type="button"><i class="fas fa-trash-alt"></i></button>
+
+                    </div>
                     <div class="record-container">
                         <div class="record-header">
                             <div data-record-type="A" class="record-type">A</div>
                             <div class="record-name"><span class="visible-xs-inline"><strong>Name</strong></span> @</div>
                             <div class="record-value"><span class="visible-xs-inline"><strong>Value</strong></span> 107.180.50.242</div>
                             <div class="record-ttl"><span class="hidden-xs">600 seconds</span></div>
-                        </div>
-                        <div class="record-edit-section">
-                            <button class="record-edit-btn" type="button" data-toggle="collapse" data-parent="#records2" data-target="#recordThree"><i class="fas fa-pencil-alt"></i></button>
                         </div>
                     </div>
                     <div class="record-details collapse" id="recordThree">
@@ -123,7 +129,42 @@
                         </div>
                         <div class="edit-record-buttons">
                             <button type="button" class="btn btn-primary">Save</button>
-                            <button type="button" class="btn btn-default">Cancel</button>
+                            <button type="button" class="btn btn-default record-btn-close">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel">
+                    <div class="record-edit-section">
+                        <button class="record-btn record-add-btn" type="button" data-toggle="collapse" data-parent="#records2" data-target="#recordAdd">ADD</button>
+                    </div>
+
+                    <div class="record-details collapse" id="recordAdd">
+                        <div class="record-input-fields">
+                            <div class="form-group">
+                                <label for="record-type-select">Type</label>
+                                <select class="form-control" id="record-type-select">
+                                    <option>Select</option>
+                                    <option>A</option>
+                                    <option>CNAME</option>
+                                    <option>MX</option>
+                                    <option>TXT</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Points to</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Seconds</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="edit-record-buttons">
+                            <button type="button" class="btn btn-primary new-record-save">Save</button>
+                            <button type="button" class="btn btn-default record-btn-close new-record-cancel">Cancel</button>
                         </div>
                     </div>
                 </div>
@@ -155,3 +196,4 @@
 
     </body>
 </html>
+
